@@ -1,5 +1,6 @@
 /*
   Access-Control-Allow-Origin: *
-  SameSite=Lax
+  SameSite=None
+  Secure
 /news-assets/*
   Cache-Control: public, s-max-age=604800

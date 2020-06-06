@@ -1,5 +1,6 @@
 /*
   Access-Control-Allow-Origin: *
   SameSite: None; Secure
+ parent of 63f3a40... Updated the headers to allow cookies to be send cross-site
 /news-assets/*
   Cache-Control: public, s-max-age=604800

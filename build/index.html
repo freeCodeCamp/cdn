@@ -1,110 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="" name="description">
-  <meta content="" name="author">
-  <title>
-    Static assets| freeCodeCamp
-  </title>
-  <link href="https://www.freecodecamp.org" rel="canonical">
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="UvVP23KA-xdDS6KUpR3-1CEMMmNRev5bXUFo" name="csrf-token">
-  <meta content="Learn to code with free online courses, programming projects, and interview preparation for developer jobs."
-    property="og:title">
-  <meta content="freeCodeCamp" property="og:site_name">
-  <meta content="on" name="twitter:widgets:csp">
-  <meta content="d0bc047a482c03c24f1168004c2a216a" name="p:domain_verify">
-  <meta content="https://www.freecodecamp.org" property="og:url">
-  <meta content="Learn to code with free online courses, programming projects, and interview preparation for developer jobs."
-    property="og:description">
-  <meta content="https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg" property="og:image">
-  <meta content="article" property="og:type">
-  <meta content="https://www.facebook.com/freecodecamp" property="article:publisher">
-  <meta content="Responsive" property="article:section">
-  <link href="https://plus.google.com/+Freecodecamp" rel="publisher">
-  <link href="https://plus.google.com/+Freecodecamp" rel="author">
-  <meta content="Learn to code with free online courses, programming projects, and interview preparation for developer jobs."
-    name="description">
-  <meta content="@freecodecamp" name="twitter:creator">
-  <meta content="http://www.freecodecamp.org" name="twitter:url">
-  <meta content="@freecodecamp" name="twitter:site">
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg" name="twitter:image:src">
-  <meta content="Learn to code for free" name="twitter:title">
-  <meta content="Learn to code with free online courses, programming projects, and interview preparation for developer jobs."
-    name="twitter:description">
-  <meta content="a40ee5d5dba3bb091ad783ebd2b1383f" name="p:domain_verify">
-  <meta content="#FFFFFF" name="msapplication-TileColor">
-  <meta content="/" name="msapplication-TileImage">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-144x144.png" rel="android-chrome" sizes="144x144">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-192x192.png" rel="android-chrome" sizes="192x192">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-36x36.png" rel="android-chrome" sizes="36x36">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-48x48.png" rel="android-chrome" sizes="48x48">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-72x72.png" rel="android-chrome" sizes="72x72">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-96x96.png" rel="android-chrome" sizes="96x96">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-manifest.json" rel="android-chrome-manifest">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/favicon-16x16.png" rel="favicon" sizes="16x16">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/favicon-32x32.png" rel="favicon" sizes="32x32">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/favicon-96x96.png" rel="favicon" sizes="96x96">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/mstile-144x144.png" rel="mstile" sizes="144x144">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/mstile-150x150.png" rel="mstile" sizes="150x150">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/mstile-310x310.png" rel="mstile" sizes="310x310">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/mstile-310x150.png" rel="mstile" sizes="310x150">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/mstile-70x70.png" rel="mstile" sizes="70x70">
-  <link href="https://s3.amazonaws.com/freecodecamp/favicons/favicon.ico" rel="favicon">
-  <link href="//s3.amazonaws.com/freecodecamp/favicons/favicon.ico" rel="shortcut icon">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Lato', sans-serif;
-      background: #006400;
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 21px;
-    }
-    main {
-      position: relative;
-      height: 600px;
-      width: 100%;
-      margin: 0 auto;
-    }
-    main div {
-      transform: translate(-50%, -50%);
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <header></header>
-    <main>
-      <div>
-        <h2>
-        	freeCodeCamp's static assets
-        </h2>
-      </div>
-    </main>
-    <footer></footer>
-  </div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="freeCodeCamp.org" name="og:title" />
+    <meta content={ 'Learn to code. Build projects. Earn certifications.' +
+    'Since 2015, 40,000 graduates have gotten jobs at tech ' + 'companies
+    including Google, Apple, Amazon, and Microsoft.' } name='og:description' />
+    <meta
+      content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+      property="og:image"
+    />
+
+    <meta
+      content="summary_large_image"
+      key="twitter:card"
+      name="twitter:card"
+    />
+
+    <meta
+      content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+      name="twitter:image:src"
+    />
+
+    <meta content="freeCodeCamp.org" name="twitter:title" />
+    <meta content={ 'Learn to code. Build projects. Earn certifications.' +
+    'Since 2015, 40,000 graduates have gotten jobs at tech ' + 'companies
+    including Google, Apple, Amazon, and Microsoft.' }
+    name='twitter:description' />
+    <meta content="$ilp.uphold.com/LJmbPn7WD4JB" name="monetization" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>freeCodeCamp.org - Chinese</title>
+    <style>
+      body {
+        background: #0a0a23;
+        color: #ffffff;
+        text-align: center;
+        font-size: 21px;
+        font-family: "Lato", sans-serif;
+      }
+      main {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      main div {
+        transform: translate(-50%, -50%);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        display: block;
+      }
+    </style>
+    <meta
+      http-equiv="refresh"
+      content="5; url=https://www.freecodecamp.org"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header></header>
+      <main>
+        <div>
+          <h2>Static Assets | freeCodeCamp.org</h2>
+          <h4>Redirecting to freeCodeCamp.org...</h4>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>

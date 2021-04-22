@@ -2,9 +2,5 @@
   Access-Control-Allow-Origin: *
   SameSite: None; Secure
   Cache-Control: no-store
-/testable-projects-fcc/*
-  Access-Control-Allow-Origin: *
-  Cache-Control: no-store
-  Referrer-Policy: no-referrer
 /news-assets/*
   Cache-Control: public, s-max-age=604800

@@ -213,7 +213,7 @@ def step21(code):
     if re.search("print\(round\(a\,\s*\-6\)", code):
         code_count = code_count + 1
     else:
-        print("Your code should inlcude 'print(round(a,-6)'")
+        print("Your code should include 'print(round(a,-6)'")
      
     if re.search("print\(round\(b\,\s*3\)", code):
         code_count = code_count + 1
@@ -255,7 +255,7 @@ def step22():
 def step23(code):
     import re
     print(" ")
-	code_count = 0
+    code_count = 0
     if re.search("def say\_something\(\)\:", code):
         print("Now change the name of the function")
     elif re.search("def fun\(\)\:", code):
@@ -344,4 +344,4 @@ def step26(code):
 def step27(code):
     print("If you didn't get a syntax error, you are ready for the project")
 
-// probably add 3 more steps
+# I will probably add 3 more steps

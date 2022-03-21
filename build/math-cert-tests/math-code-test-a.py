@@ -218,7 +218,7 @@ def step21(code):
     if re.search("print\(round\(b\,\s*3\)", code):
         code_count = code_count + 1
     else:
-        print("Your code should inlcude 'print(round(b,3)'")
+        print("Your code should include 'print(round(b,3)'")
 
     if code_count == 2:
         print("Code test passed")

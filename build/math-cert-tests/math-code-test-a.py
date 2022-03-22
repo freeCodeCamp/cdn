@@ -117,7 +117,7 @@ def step12(code):
     print(" ")
     if re.search("if test\_number\:", code):
         print("Now change the if statement")
-    elif re.search("if number\s*\%\s*test\_number\=\=0\:", code):
+    elif re.search("if number\s*\%\s*test\_number\s*\=\=\s*0\:", code):
         print("Code test passed")
         print("Go on to the next step")
     else:
@@ -127,7 +127,7 @@ def step12(code):
 def step13(code):
     import re
     print(" ")
-    if re.search("print\(1\/n\)", code):
+    if re.search("print\(1\s*\/\s*n\)", code):
         print("Code test passed")
         print("Go on to the next step")
     else:

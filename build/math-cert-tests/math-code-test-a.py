@@ -178,7 +178,6 @@ def step18(code):
     import re
     print(" ")
     code_count = 0
-    code = In[-1].split('# Only change code above this line')[0]
 
     # if n % (maybe_factor**2) == 0:
     if re.search("if n\s*\%\s*\(maybe\_factor\*\*2\)\s*\=\=\s*0\:", code):
@@ -209,7 +208,6 @@ def step21(code):
     import re
     print(" ")
     code_count = 0
-    code = In[-1].split('# Only change code above this line')[0]
     if re.search("print\(round\(a\,\s*\-6\)", code):
         code_count = code_count + 1
     else:
@@ -225,7 +223,7 @@ def step21(code):
         print("Go on to the next step")
 
 
-def step22():
+def step22(n, exponent):
     print(" ")
     # one solution
     numerator2 = int(n*10**exponent)

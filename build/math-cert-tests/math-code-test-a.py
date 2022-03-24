@@ -223,7 +223,7 @@ def step21(code):
         print("Go on to the next step")
 
 
-def step22(n, exponent):
+def step22(n, numerator, denominator, percent, exponent):
     print(" ")
     # one solution
     numerator2 = int(n*10**exponent)

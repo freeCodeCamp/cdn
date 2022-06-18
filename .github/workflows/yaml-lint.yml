@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout Repo"
-        uses: actions/checkout@v3
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
       - name: "Lint YAML"
-        uses: ibiqlik/action-yamllint@v3
+        uses: ibiqlik/action-yamllint@81e214fd484713882ce4237cb7cd264d550856cf # tag=v3
         with:
           file_or_dir: build
           strict: true

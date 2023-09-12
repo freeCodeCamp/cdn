@@ -1,0 +1,28 @@
+name: Do not use GitHub Web
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened]
+
+jobs:
+  check-first-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
+        with:
+          fetch-depth: 0
+
+      - name: Check for web UI first commit
+        run: |
+          PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+          COMMITS_URL="https://api.github.com/repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/commits"
+
+          first_commit=$(curl --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "$COMMITS_URL" | jq '.[0]')
+
+          web_ui_commit=$(echo "$first_commit" | jq 'select(.commit.message | test("Update"))')
+
+          if [ -n "$web_ui_commit" ]; then
+            echo "The first commit in the pull request was created via the GitHub web UI."
+            exit 1
+          fi

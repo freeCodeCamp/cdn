@@ -42,11 +42,11 @@
         "Link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"
       },
       {
-        "Question": "In HTML, which tag is used to insert a favicon?",
-        "Answer": "<'link'>",
-        "Distractor1": "<fav>",
-        "Distractor2": "<favicon>",
-        "Distractor3": "<icon>",
+        "Question": "In HTML, which element is used to insert a favicon?",
+        "Answer": "link element",
+        "Distractor1": "fav element",
+        "Distractor2": "favicon element",
+        "Distractor3": "icon element",
         "Explanation": "The 'link' tag is used to add a favicon to a website.",
         "Link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/'link'"
       },

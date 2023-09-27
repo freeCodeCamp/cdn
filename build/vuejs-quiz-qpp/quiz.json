@@ -1,7 +1,6 @@
 [
     {
-        "Question":
-          "In CSS, Flex is a shorthand property for which of the following properties?",
+        "Question": "In CSS, Flex is a shorthand property for which of the following properties?",
         "Answer": "flex-grow, flex-shrink, and flex-basis",
         "Distractor1": "justify-content, align-items, and align-content",
         "Distractor2": "flex-direction, flex-wrap, and flex-flow",

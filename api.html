@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<html>
+  <head>
+    <title>Info Windows</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+      /**
+       * @license
+       * Copyright 2019 Google LLC. All Rights Reserved.
+       * SPDX-License-Identifier: Apache-2.0
+       */
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+      function initMap() {
+        const uluru = { lat: 4.982873, lng: 8.334503 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+          "sandstone rock formation in the southern part of the " +
+          "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+          "south west of the nearest large town, Alice Springs; 450&#160;km " +
+          "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+          "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+          "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+          "Aboriginal people of the area. It has many springs, waterholes, " +
+          "rock caves and ancient paintings. Uluru is listed as a World " +
+          "Heritage Site.</p>" +
+          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+          "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+          "(last visited June 22, 2009).</p>" +
+          "</div>" +
+          "</div>";
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          ariaLabel: "Uluru",
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map,
+          title: "Uluru (Ayers Rock)",
+        });
+
+        marker.addListener("click", () => {
+          infowindow.open({
+            anchor: marker,
+            map,
+          });
+        });
+      }
+
+      window.initMap = initMap;
+    </script>
+    <style>
+      /**
+       * @license
+       * Copyright 2019 Google LLC. All Rights Reserved.
+       * SPDX-License-Identifier: Apache-2.0
+       */
+      /* 
+       * Always set the map height explicitly to define the size of the div element
+       * that contains the map. 
+       */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByy5i1iHWhWRWhbpUI0glBEjTAb0uaSoE&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script>
+        // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        // const apiUrl = 'https://maps.googleapis.com/maps/api/distancematrix/json?destinations=New%20York%20City%2C%20NY&origins=Washington%2C%20DC&units=imperial&key=AIzaSyByy5i1iHWhWRWhbpUI0glBEjTAb0uaSoE';
+
+        // fetch(proxyUrl + apiUrl)
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log(data)
+        //     // Handle the API response data here
+        // })
+        // .catch(error => {
+        //     console.log(error)
+        //     // Handle errors
+        // });
+
+        // fetch('https://maps.googleapis.com/maps/api/distancematrix/json?destinations=New%20York%20City%2C%20NY&origins=Washington%2C%20DC&units=imperial&key=AIzaSyByy5i1iHWhWRWhbpUI0glBEjTAb0uaSoE')
+        // .then(res => res.json())
+        // .then(data => console.log(data))
+    </script>
+  </body>
+</html>
+        <!-- let apikey = 'AIzaSyByy5i1iHWhWRWhbpUI0glBEjTAb0uaSoE' -->

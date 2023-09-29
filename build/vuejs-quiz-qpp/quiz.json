@@ -1,7 +1,7 @@
 [
   {
     "Question": "In CSS, Flex is a shorthand property for which of the following properties?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "flex-grow, flex-shrink, and flex-basis",
     "Distractor1": "justify-content, align-items, and align-content",
     "Distractor2": "flex-direction, flex-wrap, and flex-flow",
@@ -9,7 +9,7 @@
   },
   {
     "Question": "Which CSS property is used to represent the transparency of an element?",
-    "Diffucluty": "easy",
+    "Difficulty": "easy",
     "Answer": "Opacity",
     "Distractor1": "Dark",
     "Distractor2": "Transparent",
@@ -17,7 +17,7 @@
   },
   {
     "Question": "Which of the following CSS properties represents the order of flex items in a container?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "order",
     "Distractor1": "float",
     "Distractor2": "overflow",
@@ -25,7 +25,7 @@
   },
   {
     "Question": "In HTML, which of the following is the correct way for showing how to import an external script?",
-    "Diffucluty": "easy",
+    "Difficulty": "easy",
     "Answer": "<script src='index.js'></script>",
     "Distractor1": "<script add='index.js'></script>",
     "Distractor2": "<script adding-js='index.js'></script>",
@@ -33,7 +33,7 @@
   },
   {
     "Question": "In HTML, which element is used to insert a favicon?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "link element",
     "Distractor1": "fav element",
     "Distractor2": "favicon element",
@@ -41,7 +41,7 @@
   },
   {
     "Question": "Which of the following is the correct way of creating an anchor element in HTML?",
-    "Diffucluty": "easy",
+    "Difficulty": "easy",
     "Answer": "<a href= 'www.freecodecamp.org'> freeCodeCamp </a>",
     "Distractor1": "<a>www.freecodecamp.org <freeCodeCamp /a>",
     "Distractor2": "<a href='www.freecodecamp.org' freeCodeCamp /a>",
@@ -49,7 +49,7 @@
   },
   {
     "Question": "What is meant by an empty tag in HTML?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "An empty tag doesn't require a closing tag",
     "Distractor1": "There is no such concept of empty tag in HTML",
     "Distractor2": "An empty tag cannot having any content within it",
@@ -57,7 +57,7 @@
   },
   {
     "Question": "Which HTML element is used to 'link' to a 3rd party JavaScript library and make it available on your page?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "<script>",
     "Distractor1": "<input>",
     "Distractor2": "<head>",
@@ -65,7 +65,7 @@
   },
   {
     "Question": "How many Section Heading elements are there in HTML5?",
-    "Diffucluty": "easy",
+    "Difficulty": "easy",
     "Answer": "6",
     "Distractor1": "4",
     "Distractor2": "8",
@@ -73,7 +73,7 @@
   },
   {
     "Question": "In JavaScript, if let x='Prakhar', then what will be the result for console.log(x.substring(2,5))?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "akh",
     "Distractor1": "akaha",
     "Distractor2": "aka",
@@ -81,7 +81,7 @@
   },
   {
     "Question": "In JavaScript, what is the range of numbers returned from the Math.random() method?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "Between 0 and 1 (including 0; not including 1).",
     "Distractor1": "Between 0 and 1 (including neither 0 or 1).",
     "Distractor2": "Between 0 and 1 (including 1; not including 0).",
@@ -89,7 +89,7 @@
   },
   {
     "Question": "In JavaScript, what is the difference between the indexOf() and search() methods?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "indexOf() can take a second parameter while search() cannot",
     "Distractor1": "Both methods are the same",
     "Distractor2": "indexOf() only takes regular expressions",
@@ -97,7 +97,7 @@
   },
   {
     "Question": "What does the 'debugger' statement in JavaScript do?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "It acts as a breakpoint in a program",
     "Distractor1": "It will debug errors in the current statement",
     "Distractor2": "It will debug all the errors in the program at runtime",
@@ -105,7 +105,7 @@
   },
   {
     "Question": "What kind of programming can JavaScript be used for?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "Both Client and Server side programming",
     "Distractor1": "Server side only",
     "Distractor2": "Client side only",
@@ -113,7 +113,7 @@
   },
   {
     "Question": "In JavaScript, if let x='5', then what will be the value of console.log(x==5,x===5)?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "true false",
     "Distractor1": "true true",
     "Distractor2": "false true",
@@ -121,7 +121,7 @@
   },
   {
     "Question": "In JavaScript, which Web API is used to display a dialog box with an optional message?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "window.alert()",
     "Distractor1": "window.alertHTML()",
     "Distractor2": "window.alertContent()",
@@ -129,7 +129,7 @@
   },
   {
     "Question": "In JavaScript, if let word='Intelligent', then what will be the value of word.slice(2,5)?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "tel",
     "Distractor1": "tellig",
     "Distractor2": "ll",
@@ -137,7 +137,7 @@
   },
   {
     "Question": "In Javascript, what keyword is used to check whether a given property in an object is valid?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "in",
     "Distractor1": "is in",
     "Distractor2": "exists",
@@ -145,7 +145,7 @@
   },
   {
     "Question":  "What is the name of the international body responsible for establishing the most common web accessibility standards?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "World Wide Web Consortium(W3C)",
     "Distractor1": "Websites for All",
     "Distractor2": "Web Accessibility Initiative (WAI)",
@@ -153,7 +153,7 @@
   },
   {
     "Question": "Why is it important to use semantic elements when writing HTML?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "Semantic code clearly describes the code's meaning to both the browser and the developer",
     "Distractor1": "Semantic code is prettier.",
     "Distractor2": "Semantic code decreases site readability.",
@@ -161,7 +161,7 @@
   },
   {
     "Question": "Which one is the correct HTML element used to identify the main language of an entire page?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "<html>",
     "Distractor1": "<!DOCTYPE>",
     "Distractor2": "<body>",
@@ -169,7 +169,7 @@
   },
   {
     "Question": "In Git, how can you stage a file that ends with a *.txt extension?",
-    "Diffucluty": "medium",
+    "Difficulty": "medium",
     "Answer": "git add *.txt",
     "Distractor1": "git add *.text",
     "Distractor2": "git add -a .txt",
@@ -177,7 +177,7 @@
   },
   {
     "Question": "In Git, how can you save uncommitted changes on your local machine so you can work on it later?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "git stash",
     "Distractor1": "git copy into notepad.exe",
     "Distractor2": "git save code",
@@ -185,7 +185,7 @@
   },
   {
     "Question": "In Git, how can you check your configuration?",
-    "Diffucluty": "hard",
+    "Difficulty": "hard",
     "Answer": "git config -l",
     "Distractor1": "git config -check",
     "Distractor2": "git checkconfig -l",

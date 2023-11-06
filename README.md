@@ -12,7 +12,7 @@ You can report bugs and request features on [freeCodeCamp.org's main repository]
 
 The [build](/build) directory gets deployed and is made available at the root of the top-level domain.
 
-Examples:
+Examples :
 
 - `/build/ => https://cdn.freecodecamp.org/`
 

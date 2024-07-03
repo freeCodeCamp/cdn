@@ -1,60 +1,60 @@
-article0title: 'Learn CSS Transform'
-article0link: 'https://www.freecodecamp.org/news/complete-guide-to-css-transform-functions-and-properties/'
-article1title: 'Build a Static Blog'
-article1link: 'https://www.freecodecamp.org/news/how-to-create-a-static-blog-with-lume/'
-article2title: 'Build an AI Chatbot'
-article2link: 'https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-redis-python-and-gpt/'
-article3title: 'What is Programming?'
-article3link: 'https://www.freecodecamp.org/news/what-is-programming-tutorial-for-beginners/'
-article4title: 'Python Code Examples'
-article4link: 'https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/'
-article5title: 'Open Source for Devs'
-article5link: 'https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/'
-article6title: 'HTTP Networking in JS'
-article6link: 'https://www.freecodecamp.org/news/http-full-course/'
-article7title: 'Write React Unit Tests'
-article7link: 'https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react-redux/'
-article8title: 'Learn Algorithms in JS'
-article8link: 'https://www.freecodecamp.org/news/introduction-to-algorithms-with-javascript-examples/'
-article9title: 'How to Write Clean Code'
-article9link: 'https://www.freecodecamp.org/news/how-to-write-clean-code/'
-article10title: 'Learn PHP'
-article10link: 'https://www.freecodecamp.org/news/the-php-handbook/'
-article11title: 'Learn Java'
-article11link: 'https://www.freecodecamp.org/news/the-java-handbook/'
-article12title: 'Learn Swift'
-article12link: 'https://www.freecodecamp.org/news/the-swift-handbook/'
-article13title: 'Learn Golang'
-article13link: 'https://www.freecodecamp.org/news/learn-golang-handbook/'
-article14title: 'Learn Node.js'
-article14link: 'https://www.freecodecamp.org/news/get-started-with-nodejs/'
-article15title: 'Learn CSS Grid'
-article15link: 'https://www.freecodecamp.org/news/complete-guide-to-css-grid/'
-article16title: 'Learn Solidity'
-article16link: 'https://www.freecodecamp.org/news/learn-solidity-handbook/'
-article17title: 'Learn Express.js'
-article17link: 'https://www.freecodecamp.org/news/the-express-handbook/'
-article18title: 'Learn JS Modules'
-article18link: 'https://www.freecodecamp.org/news/javascript-es-modules-and-module-bundlers/'
-article19title: 'Learn Apache Kafka'
-article19link: 'https://www.freecodecamp.org/news/apache-kafka-handbook/'
-article20title: 'REST API Best Practices'
-article20link: 'https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api/'
-article21title: 'Front-End JS Development'
-article21link: 'https://www.freecodecamp.org/news/front-end-javascript-development-react-angular-vue-compared/'
-article22title: 'Learn to Build REST APIs'
-article22link: 'https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/'
-article23title: 'Intermediate TS and React'
-article23link: 'https://www.freecodecamp.org/news/build-strongly-typed-polymorphic-components-with-react-and-typescript/'
-article24title: 'Command Line for Beginners'
-article24link: 'https://www.freecodecamp.org/news/command-line-for-beginners/'
-article25title: 'Intro to Operating Systems'
-article25link: 'https://www.freecodecamp.org/news/an-introduction-to-operating-systems/'
-article26title: 'Learn to Build GraphQL APIs'
-article26link: 'https://www.freecodecamp.org/news/building-consuming-and-documenting-a-graphql-api/'
-article27title: 'OSS Security Best Practices'
-article27link: 'https://www.freecodecamp.org/news/oss-security-best-practices/'
-article28title: 'Distributed Systems Patterns'
-article28link: 'https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/'
-article29title: 'Software Architecture Patterns'
-article29link: 'https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/'
+article0title: "Learn CSS Transform"
+article0link: "https://www.freecodecamp.org/news/complete-guide-to-css-transform-functions-and-properties/"
+article1title: "Build a Static Blog"
+article1link: "https://www.freecodecamp.org/news/how-to-create-a-static-blog-with-lume/"
+article2title: "Build an AI Chatbot"
+article2link: "https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-redis-python-and-gpt/"
+article3title: "What is Programming?"
+article3link: "https://www.freecodecamp.org/news/what-is-programming-tutorial-for-beginners/"
+article4title: "Python Code Examples"
+article4link: "https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/"
+article5title: "Open Source for Devs"
+article5link: "https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/"
+article6title: "HTTP Networking in JS"
+article6link: "https://www.freecodecamp.org/news/http-full-course/"
+article7title: "Write React Unit Tests"
+article7link: "https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react-redux/"
+article8title: "Learn Algorithms in JS"
+article8link: "https://www.freecodecamp.org/news/introduction-to-algorithms-with-javascript-examples/"
+article9title: "How to Write Clean Code"
+article9link: "https://www.freecodecamp.org/news/how-to-write-clean-code/"
+article10title: "Learn PHP"
+article10link: "https://www.freecodecamp.org/news/the-php-handbook/"
+article11title: "Learn Java"
+article11link: "https://www.freecodecamp.org/news/the-java-handbook/"
+article12title: "Learn Swift"
+article12link: "https://www.freecodecamp.org/news/the-swift-handbook/"
+article13title: "Learn Golang"
+article13link: "https://www.freecodecamp.org/news/learn-golang-handbook/"
+article14title: "Learn Node.js"
+article14link: "https://www.freecodecamp.org/news/get-started-with-nodejs/"
+article15title: "Learn CSS Grid"
+article15link: "https://www.freecodecamp.org/news/complete-guide-to-css-grid/"
+article16title: "Learn Solidity"
+article16link: "https://www.freecodecamp.org/news/learn-solidity-handbook/"
+article17title: "Learn Express.js"
+article17link: "https://www.freecodecamp.org/news/the-express-handbook/"
+article18title: "Learn JS Modules"
+article18link: "https://www.freecodecamp.org/news/javascript-es-modules-and-module-bundlers/"
+article19title: "Learn Apache Kafka"
+article19link: "https://www.freecodecamp.org/news/apache-kafka-handbook/"
+article20title: "REST API Best Practices"
+article20link: "https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api/"
+article21title: "Front-End JS Development"
+article21link: "https://www.freecodecamp.org/news/front-end-javascript-development-react-angular-vue-compared/"
+article22title: "Learn to Build REST APIs"
+article22link: "https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/"
+article23title: "Intermediate TS and React"
+article23link: "https://www.freecodecamp.org/news/build-strongly-typed-polymorphic-components-with-react-and-typescript/"
+article24title: "Command Line for Beginners"
+article24link: "https://www.freecodecamp.org/news/command-line-for-beginners/"
+article25title: "Intro to Operating Systems"
+article25link: "https://www.freecodecamp.org/news/an-introduction-to-operating-systems/"
+article26title: "Learn to Build GraphQL APIs"
+article26link: "https://www.freecodecamp.org/news/building-consuming-and-documenting-a-graphql-api/"
+article27title: "OSS Security Best Practices"
+article27link: "https://www.freecodecamp.org/news/oss-security-best-practices/"
+article28title: "Distributed Systems Patterns"
+article28link: "https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/"
+article29title: "Software Architecture Patterns"
+article29link: "https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/"

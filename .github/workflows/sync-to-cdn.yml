@@ -10,12 +10,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
+      - name: install rclone
+        run: sudo apt-get install -y rclone
+
+      - name: sync to S3
         env:
-          # https://github.com/jakejarvis/s3-sync-action#configuration
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          # Rclone reads these standard AWS env vars automatically
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SOURCE_DIR: 'build'
+          # Required only if creating the bucket
+          # AWS_REGION: "us-east-2"
+          BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET }}
+
+          # Configure Rclone to use S3 via environment variables
+          RCLONE_CONFIG_TARGET_TYPE: s3
+          RCLONE_CONFIG_TARGET_PROVIDER: AWS
+          RCLONE_CONFIG_TARGET_ENV_AUTH: true
+          # RCLONE_CONFIG_TARGET_REGION: "us-east-2"
+          RCLONE_CONFIG_TARGET_ACL: public-read
+        run: |
+          # Sync build/ directory to the 'target' remote defined above
+          # --checksum: Skip if hash matches (ignores timestamp)
+          # --delete: Delete files in S3 that are gone locally
+          # --verbose: Show what is being transferred
+          # https://rclone.org/s3/#reducing-costs
+          # --fast-list: Trades off API transactions for memory use. As a rough guide rclone uses 1k of memory per object stored
+          # --update --use-server-modtime: Could be used to avoid extra API call
+          rclone sync build/ target:$BUCKET_NAME --checksum --delete --fast-list --verbose

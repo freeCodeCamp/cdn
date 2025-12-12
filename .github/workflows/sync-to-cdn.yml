@@ -24,4 +24,4 @@ jobs:
           RCLONE_CONFIG_TARGET_ENV_AUTH: true
           RCLONE_CONFIG_TARGET_ACL: public-read
         run: |
-          rclone sync build/ target:$BUCKET_NAME --checksum --fast-list --verbose --dry-run
+          rclone sync build/ target:$BUCKET_NAME --checksum --fast-list --verbose

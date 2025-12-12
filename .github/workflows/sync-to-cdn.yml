@@ -10,12 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
+      - name: install rclone
+        run: sudo apt-get install -y rclone
+
+      - name: sync to S3
         env:
-          # https://github.com/jakejarvis/s3-sync-action#configuration
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SOURCE_DIR: 'build'
+          BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET }}
+
+          RCLONE_CONFIG_TARGET_TYPE: s3
+          RCLONE_CONFIG_TARGET_PROVIDER: AWS
+          RCLONE_CONFIG_TARGET_ENV_AUTH: true
+          RCLONE_CONFIG_TARGET_ACL: public-read
+        run: |
+          rclone sync build/ target:$BUCKET_NAME --checksum --fast-list --verbose --dry-run

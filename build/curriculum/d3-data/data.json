@@ -1,4 +1,4 @@
-const data = [ 
+[ 
   { year: 2012, followers: { twitter: 2594, tumblr:  401, instagram:   83 }},
   { year: 2013, followers: { twitter: 3049, tumblr:  440, instagram:  192 }},
   { year: 2014, followers: { twitter: 3511, tumblr:  415, instagram:  511 }},

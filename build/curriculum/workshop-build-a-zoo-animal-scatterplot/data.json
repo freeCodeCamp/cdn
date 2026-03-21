@@ -1,0 +1,22 @@
+[
+  { "Name": "Blue Whale", "Type": "Mammal", "Weight": 120000, "Lifespan": 90 },
+  { "Name": "Fin Whale", "Type": "Mammal", "Weight": 80000, "Lifespan": 80 },
+  { "Name": "Sperm Whale", "Type": "Mammal", "Weight": 57000, "Lifespan": 70 },
+  {
+    "Name": "Humpback Whale",
+    "Type": "Mammal",
+    "Weight": 40000,
+    "Lifespan": 60
+  },
+  { "Name": "Elephant", "Type": "Mammal", "Weight": 6000, "Lifespan": 70 },
+  { "Name": "Hippopotamus", "Type": "Mammal", "Weight": 1500, "Lifespan": 50 },
+  { "Name": "Rhinoceros", "Type": "Mammal", "Weight": 2300, "Lifespan": 40 },
+  { "Name": "Tiger", "Type": "Mammal", "Weight": 220, "Lifespan": 15 },
+  { "Name": "Lion", "Type": "Mammal", "Weight": 190, "Lifespan": 14 },
+  { "Name": "Zebra", "Type": "Mammal", "Weight": 350, "Lifespan": 25 },
+  { "Name": "Penguin", "Type": "Bird", "Weight": 35, "Lifespan": 20 },
+  { "Name": "Parrot", "Type": "Bird", "Weight": 1, "Lifespan": 50 },
+  { "Name": "Crocodile", "Type": "Reptile", "Weight": 1000, "Lifespan": 70 },
+  { "Name": "Tortoise", "Type": "Reptile", "Weight": 250, "Lifespan": 150 },
+  { "Name": "Frog", "Type": "Amphibian", "Weight": 0.5, "Lifespan": 10 }
+]

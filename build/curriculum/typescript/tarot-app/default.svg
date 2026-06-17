@@ -1,9 +1,1 @@
-<svg width="120" height="200" xmlns="http://www.w3.org/2000/svg">
-    <rect width="120" height="200" rx="12" fill="#eee"
-        stroke="#bbb" stroke-width="4" />
-    <text x="50%" y="50%" dominant-baseline="middle"
-        text-anchor="middle" fill="#888" font-size="20"
-        font-family="Arial">
-        No Image
-    </text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="200"><rect width="120" height="200" fill="#eee" stroke="#bbb" stroke-width="4" rx="12"/><text x="50%" y="50%" fill="#888" dominant-baseline="middle" font-family="Arial" font-size="20" text-anchor="middle">No Image</text></svg>

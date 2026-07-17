@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-07-17T14:17:25.855Z",
+  "files": {
+    "brand/asset-kit.zip": {
+      "sha256": "0debcc23f95da6c1c1cb87b54ad1d75caece111878140302b1cea954e6c0fc47",
+      "sha384": "sha384-IrazLWxLJqP8Xe3Xoh3t0yj3rFFPArDaaieyPpJIGNPAS87vt0F+emdDB7ckEXNY",
+      "bytes": 30541
+    },
+    "brand/fcc-primary.svg": {
+      "sha256": "d8632d9677bdae50d01a7a04375addfb92098f6619bb47bd9be2da45176c8561",
+      "sha384": "sha384-N4rVgmyW77fDvScdXxAJkYVl0s45R2cONBmpjnZ3aSnQFIqIFG2doBoAcy/KAXzU",
+      "bytes": 38654
+    },
+    "brand/fcc-puck.svg": {
+      "sha256": "5de77a17035f6656c143ad62ea12d7d98c04dc83f3873011a78e55cb2c9f7c9d",
+      "sha384": "sha384-2sR8DjE4RXdTzrRZ43WYBBdWm+BvV1eMAA55w27tX/r0LsN+Cgdt0CT47HWMjRsz",
+      "bytes": 4671
+    },
+    "brand/fcc-secondary.svg": {
+      "sha256": "2aded8944142156f2d7c6c831fdc3a3e48161436e37d6878cf0e82b35beee9fb",
+      "sha384": "sha384-KV2dIYokhnGY6i7ve5gcbPjaO8m20d44fQbY/PF0KxgvDArU/edYgxHCMBODeH6Z",
+      "bytes": 38696
+    },
+    "components.min.css": {
+      "sha256": "c088650c6e2282d69ee190a4430bb9a0724150ec6595ccff210ec9acfc97a8a9",
+      "sha384": "sha384-8c6mwFPGo6WlnY53tj4nztni29+IUoFHaAzymIfRmG8KczbcaN5wmUxHmAGxYg5z",
+      "bytes": 41893
+    },
+    "fonts/Hack-ZeroSlash-Bold.woff2": {
+      "sha256": "f2c7d489ee1d858b25b2da93af94dd52d2279818f56f6069129c4e451ad95565",
+      "sha384": "sha384-0kbjulc8grXD/dI35esoDqgrG8Ui/O33nJRRrCf91I3OHxAaPxvPYx+JskvpC3mK",
+      "bytes": 22848
+    },
+    "fonts/Hack-ZeroSlash-BoldItalic.woff2": {
+      "sha256": "08d5a8604fe443aaf1cc3ce6499662b9e1bc6df971513e5c413c8a1ba3d9ad7d",
+      "sha384": "sha384-p/TRYg5T3bHRRiD5PrO5QJsmYcVAhn03HiH7WHsw36SkZdsD1z66Wm+5Q4a6yTI2",
+      "bytes": 26740
+    },
+    "fonts/Hack-ZeroSlash-Italic.woff2": {
+      "sha256": "b0ba969bff7e2b0205a300bb32d8c1fca537e484a280be8be556044f1c59098a",
+      "sha384": "sha384-brYkqLEabtNSfD2dRMM1Y0jmSK6h51gUjn7xigFONYak3ty7MbBi1MyfZFi6YH7Z",
+      "bytes": 27044
+    },
+    "fonts/Hack-ZeroSlash-Regular.woff2": {
+      "sha256": "c6026b4f34bed91255533965e73b80fd2f69aa44c016f294e4c7ef6181f280d2",
+      "sha384": "sha384-nbUmxdZKUcR5m2yamd9WgqCnMLTkPkOgiS1z1NahEBesAOA67sof26Jtbt6VFKVM",
+      "bytes": 22520
+    },
+    "fonts/Lato-Black.woff": {
+      "sha256": "e5bc84ee6ec9eadc642f4c67399e9ec4ebc654874771e23ebcf88cf4f39c98a7",
+      "sha384": "sha384-uplFCCYNeyaSQtMtMxs1ZoplJsJoLWe+Pu/fJW7iwNtHqrmwVzsBEiDrZpxT44Rw",
+      "bytes": 36136
+    },
+    "fonts/Lato-Bold.woff": {
+      "sha256": "fe92ff49ddb53e0bc1716cdfac74e2ad313d6df2a33b20102c6c1bac75d6b76b",
+      "sha384": "sha384-+SDvb9HqWNCAItVKaAPvku5j+rnlQhuYZj+1SXuLze56zBp7ctm56dfvgHjIZ+U3",
+      "bytes": 36732
+    },
+    "fonts/Lato-BoldItalic.woff": {
+      "sha256": "623a8af97003757d567fcba7a83543967bd3b529ace1c90d4aa698c1efecaa5b",
+      "sha384": "sha384-Sx4oFdOdCPT6mXelZVWSfaLzZ+80t8RV+ktkxtO3hdDSDVYHxl9FcaiXi5QLWZ6z",
+      "bytes": 39376
+    },
+    "fonts/Lato-Italic.woff": {
+      "sha256": "8e6c68d1fe5b5688282358dae00b4d3549539d1aa1b49aefa499ff91739d9280",
+      "sha384": "sha384-Rr9yIve6MikwPKLVDiOlzmjU3Q286dLa60euA8rbs8ycRGT13Mjzt8qwHylui9la",
+      "bytes": 39100
+    },
+    "fonts/Lato-Light.woff": {
+      "sha256": "10aea3cb8f605e1f7a500935db3e87342d335757a494604652747990f1ffb749",
+      "sha384": "sha384-77i3/52y2BQ3HkSD01euDGnyA8PRpIJcXsN+HTD7rPJ1BhkR4Mruch8cmH797gFS",
+      "bytes": 35544
+    },
+    "fonts/Lato-Regular.woff": {
+      "sha256": "994fdad01e6fc1cd44f47fc538cffc8f925fadbe272e494e292c785e0f2166fc",
+      "sha384": "sha384-uUV1B7JpV78Gi8IQAW/yKtrl92jACiM8kynDiIExkMZg9voDQGZzM5PxW2EzBSJ0",
+      "bytes": 37524
+    },
+    "sprite.svg": {
+      "sha256": "8c6c400aa71bf0f19826584eb4018158f3d0f79a466a8da165d8c3fd58cd6962",
+      "sha384": "sha384-nRl1EZly9gB9okifsfX6Sk0XPEaElOyWn/WwINrT9z0I2jhnFEFBH3bqonZtwC7Z",
+      "bytes": 19520
+    },
+    "styles.min.css": {
+      "sha256": "06a4c639f204ab5627c1e19e625a9333932ddabfbfd3d2abdfc3c140aea6c9d4",
+      "sha384": "sha384-YE8GvDM6wfLjtoTd/uo46LQM6ZIgqPlAD16ICGxiF3S69qg5N3/QQhivKhdX/znB",
+      "bytes": 49640
+    },
+    "tokens.min.css": {
+      "sha256": "6dbc779f88b0d96288fe818246d92222d573c7a2ac8eb25f78a8fb1cf01b3350",
+      "sha384": "sha384-Uf6qif7B6UOXu7Ls1JVuYiz0iLG1h9NBK+EfHzbI4F8UlhmRSvpUXfLKr2r6cyge",
+      "bytes": 7747
+    },
+    "uikit.global.js": {
+      "sha256": "fd5bb84f02ee409475ee9911af48b500e903e03da9469069f4cbe13378f22fdb",
+      "sha384": "sha384-Q2CrOf3gEdUE4279btPRCTTXMFbG62lPMtOUStIcM2h7I2p7ljGXFsmlmFjuG7lB",
+      "bytes": 9834
+    }
+  }
+}

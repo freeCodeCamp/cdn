@@ -17,19 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      - name: sync to S3
-        uses: docker://rclone/rclone:1.75.1
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-          RCLONE_CONFIG_TARGET_TYPE: s3
-          RCLONE_CONFIG_TARGET_PROVIDER: AWS
-          RCLONE_CONFIG_TARGET_ENV_AUTH: true
-          RCLONE_CONFIG_TARGET_ACL: public-read
-        with:
-          args: sync build/ target:${{ secrets.AWS_S3_BUCKET }} --checksum --fast-list --verbose
-
       - name: sync to R2
         uses: docker://rclone/rclone:1.75.1
         env:

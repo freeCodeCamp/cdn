@@ -10,8 +10,20 @@ on:
       #
       # - synchronize
 
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   has-web-commits:
+    if: >-
+      ${{ !(github.event.pull_request.user.type == 'Bot' &&
+      contains(fromJSON('["renovate[bot]", "dependabot[bot]", "github-actions[bot]"]'),
+      github.event.pull_request.user.login)) }}
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-22.04
     steps:
 
@@ -25,7 +37,7 @@ jobs:
 
           if [ "$IS_GITHUB_COMMIT" = "true" ]; then
             # Set variable for next task
-            echo "IS_GITHUB_COMMIT=true" >> $GITHUB_ENV
+            echo "IS_GITHUB_COMMIT=true" >> "$GITHUB_ENV"
           fi
 
       - name: Add comment on PR if commits are made on GitHub Web UI

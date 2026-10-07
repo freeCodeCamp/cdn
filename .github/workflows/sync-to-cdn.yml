@@ -16,30 +16,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: install rclone
-        env:
-          RCLONE_VERSION: v1.75.1
-          RCLONE_SHA256: 982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab
-        run: |
-          curl -fsSLO "https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip"
-          echo "${RCLONE_SHA256}  rclone-${RCLONE_VERSION}-linux-amd64.zip" | sha256sum -c -
-          unzip -q "rclone-${RCLONE_VERSION}-linux-amd64.zip"
-          sudo install "rclone-${RCLONE_VERSION}-linux-amd64/rclone" /usr/local/bin/rclone
 
       - name: sync to S3
+        uses: docker://rclone/rclone:1.75.1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET }}
 
           RCLONE_CONFIG_TARGET_TYPE: s3
           RCLONE_CONFIG_TARGET_PROVIDER: AWS
           RCLONE_CONFIG_TARGET_ENV_AUTH: true
           RCLONE_CONFIG_TARGET_ACL: public-read
-        run: |
-          rclone sync build/ "target:$BUCKET_NAME" --checksum --fast-list --verbose
+        with:
+          args: sync build/ target:${{ secrets.AWS_S3_BUCKET }} --checksum --fast-list --verbose
 
       - name: sync to R2
+        uses: docker://rclone/rclone:1.75.1
         env:
           RCLONE_CONFIG_R2_TYPE: s3
           RCLONE_CONFIG_R2_PROVIDER: Cloudflare
@@ -47,6 +39,5 @@ jobs:
           RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
           RCLONE_CONFIG_R2_NO_CHECK_BUCKET: true
-        run: |
-          rclone version
-          rclone sync build/ r2:cdn-0 --checksum --fast-list --verbose
+        with:
+          args: sync build/ r2:cdn-0 --checksum --fast-list --verbose

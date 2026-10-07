@@ -4,9 +4,15 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+concurrency:
+  group: sync-to-cdn
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -24,4 +30,16 @@ jobs:
           RCLONE_CONFIG_TARGET_ENV_AUTH: true
           RCLONE_CONFIG_TARGET_ACL: public-read
         run: |
-          rclone sync build/ target:$BUCKET_NAME --checksum --fast-list --verbose
+          rclone sync build/ "target:$BUCKET_NAME" --checksum --fast-list --verbose
+
+      - name: sync to R2
+        env:
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          RCLONE_CONFIG_R2_NO_CHECK_BUCKET: true
+        run: |
+          rclone version
+          rclone sync build/ r2:cdn-0 --checksum --fast-list --verbose

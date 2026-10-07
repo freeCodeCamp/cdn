@@ -17,7 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: install rclone
-        run: sudo apt-get install -y rclone
+        env:
+          RCLONE_VERSION: v1.75.1
+          RCLONE_SHA256: 982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab
+        run: |
+          curl -fsSLO "https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip"
+          echo "${RCLONE_SHA256}  rclone-${RCLONE_VERSION}-linux-amd64.zip" | sha256sum -c -
+          unzip -q "rclone-${RCLONE_VERSION}-linux-amd64.zip"
+          sudo install "rclone-${RCLONE_VERSION}-linux-amd64/rclone" /usr/local/bin/rclone
 
       - name: sync to S3
         env:

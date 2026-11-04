@@ -10,9 +10,21 @@ on:
       #
       # - synchronize
 
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   has-web-commits:
-    runs-on: ubuntu-22.04
+    if: >-
+      ${{ !(github.event.pull_request.user.type == 'Bot' &&
+      contains(fromJSON('["renovate[bot]", "dependabot[bot]", "github-actions[bot]"]'),
+      github.event.pull_request.user.login)) }}
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-26.04
     steps:
 
       - name: Check if commits are made on GitHub Web UI
@@ -25,11 +37,11 @@ jobs:
 
           if [ "$IS_GITHUB_COMMIT" = "true" ]; then
             # Set variable for next task
-            echo "IS_GITHUB_COMMIT=true" >> $GITHUB_ENV
+            echo "IS_GITHUB_COMMIT=true" >> "$GITHUB_ENV"
           fi
 
       - name: Add comment on PR if commits are made on GitHub Web UI
-        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9
         if: env.IS_GITHUB_COMMIT == 'true'
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
